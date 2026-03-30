@@ -1,0 +1,9 @@
+{
+  "localId": 1001,
+  "name": "Player1",
+  "listenPort": 7001,
+  "peers": [
+    { "id": 1002, "name": "Player2", "address": "127.0.0.1", "port": 7002 },
+    { "id": 1003, "name": "Player3", "address": "127.0.0.1", "port": 7003 }
+  ]
+}
