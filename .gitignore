@@ -1,0 +1,9 @@
+bin/
+obj/
+.vscode/
+.claude/
+*.user
+*.log
+*.exe
+*.pdb
+steam_appid.txt

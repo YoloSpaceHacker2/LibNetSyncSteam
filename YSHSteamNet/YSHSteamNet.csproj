@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <!-- Steamworks.NET local DLL — platform-conditional -->
+  <ItemGroup Condition="'$(OS)' == 'Windows_NT'">
+    <Reference Include="Steamworks.NET">
+      <HintPath>..\SteamworksNet\x64\Windows\Steamworks.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(OS)' != 'Windows_NT'">
+    <Reference Include="Steamworks.NET">
+      <HintPath>..\SteamworksNet\x64\OSX-Linux\Steamworks.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

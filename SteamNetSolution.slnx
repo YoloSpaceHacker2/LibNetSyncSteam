@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="YSHSteamNet/YSHSteamNet.csproj" />
+  <Project Path="YSHSteamNetTestApp/YSHSteamNetTestApp.csproj" />
+  <Project Path="YSHSteamNetApp/YSHSteamNetApp.csproj" />
+</Solution>
